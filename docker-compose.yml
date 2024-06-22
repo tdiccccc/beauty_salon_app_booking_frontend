@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  booking_frontend:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+    image: beauty_salon_booking_frontend
+    container_name: beauty_salon_booking_frontend
+    working_dir: /var/www/beauty_salon_app_booking_frontend
+    volumes:
+      - .:/var/www/beauty_salon_app_booking_frontend
+    ports:
+      - 8081:8080
+    networks:
+      - beauty_salon
+
+networks:
+  beauty_salon:
+    external: true

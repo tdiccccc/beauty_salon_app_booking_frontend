@@ -1,0 +1,11 @@
+{
+  "name": "beauty_salon_app_booking_frontend",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "booking_frontend",
+  "workspaceFolder": "/var/www/beauty_salon_app_booking_frontend",
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "octref.vetur"
+  ],
+  "forwardPorts": [8081]
+}
